@@ -20,7 +20,14 @@ namespace PlantsStore
             Host.CreateDefaultBuilder(args)
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
+                    var port = Environment.GetEnvironmentVariable("PORT");
                     webBuilder.UseStartup<Startup>();
+                  //  webBuilder.UseUrls("http://localhost:5003", "https://localhost:5004");
+                    webBuilder.UseKestrel(opts =>
+                    {
+                        opts.ListenAnyIP(Int32.Parse(port));
+                    })
+
                 });
     }
 }
