@@ -1,0 +1,19 @@
+{
+  "name": "plants-store",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ilya-rachinskiy/plants-store.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ilya-rachinskiy/plants-store/issues"
+  },
+  "homepage": "https://github.com/ilya-rachinskiy/plants-store#readme"
+}
